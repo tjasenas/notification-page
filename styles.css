@@ -6,6 +6,7 @@ body {
     font-size: 16px;
     margin: 0;
     line-height: 1.4;
+    background-color: hsl(210, 60%, 98%);
 }
 
 * {
@@ -59,8 +60,10 @@ h1 {
 .container {
     max-width: 700px;
     min-width: 320px;
-    padding: 2rem 1rem 0 1rem;
-    margin: 0 auto;
+    padding: 2.5rem 1rem;
+    margin: 2rem auto;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 1rem;
 }
 
 .container__head {
@@ -84,24 +87,30 @@ h1 {
 
 /* Notifications */
 
-.notification-list {
-    padding: 0 1rem;
-}
 .notification {
-    padding-left: 3.2rem;
+    padding: 1rem 1rem 1rem 4rem;
     position: relative;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1rem;
     font-size: 0.875rem;
+    border-radius: 0.5rem;
+}
+.notification:last-child {
+    margin-bottom: 0;
 }
 @media (min-width: 700px) {
     .notification {
         font-size: 1rem;
     }
 }
+.still-unread {
+    background-color: hsl(210, 60%, 98%);
+}
+
+
 .notification__avarta {
     position: absolute;
-    left: 0;
-    top: 0;
+    left: 1rem;
+    top: 1rem;
 }
 .notification__action {
     margin: 0 0.5rem;
@@ -152,11 +161,11 @@ h1 {
 }
 .notification__img {
     position:absolute;
-    right: 0;
-    top: 0;
+    right: 1rem;
+    top: 1rem;
 }
 .has-img {
-    padding-right: 3rem;
+    padding-right: 4rem;
 }
 
 /* Footer */ 
