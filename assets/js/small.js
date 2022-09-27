@@ -6,5 +6,6 @@ const unreadedMsg = document.querySelectorAll('.notification__unreaded');
 selectBtn.addEventListener('click', function(){
   unreadedMsg.forEach(function(e){
     e.remove();
+    document.querySelector('.head--unread').innerHTML = "0";
   });
 });
